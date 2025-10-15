@@ -1,0 +1,221 @@
+.root{
+    width: 100vw;
+    min-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    z-index: 1;
+}
+.loginMask{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 999;
+}
+
+.banner{
+    width: 100vw;
+    height: 285px;
+    /* background-color: darkblue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+   /* position: relative; */
+}
+.banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(10px) brightness(0.8); /* 轻微模糊并降低亮度 */
+  z-index: 1;
+}
+
+.banner > * {
+  position: relative;
+  z-index: 2;
+}
+.left{
+    margin-right: 20px;
+    font-size: 30px;
+}
+.right{
+    margin-left:20px;
+    font-size: 30px;
+}
+.bannerImage{
+    width: 730px;
+    height: 100%;
+    background-color: darkred;
+}
+.showImg{
+    width: 100%;
+    height: 100%;
+    background-color: yellowgreen;
+}
+.dowload{
+    width: 270px;
+     height: 100%;
+     background-color: rgb(59, 62, 64);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.dowloadImg{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+.dowloadBtn{
+    width: 210px;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: rgb(57,122,221);
+    border:none;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.dowloadBtn:hover{
+    background-color: rgb(30, 91, 177);
+}
+.dowloadSlogan{
+    font-size: 10px;
+}
+.contant{
+    width: 1000px;
+     background-color: rgb(255, 255, 255);
+     position: relative;
+     border-left: 1px solid black;
+     border-right: 1px solid black;
+}
+.mainContent{
+    margin-right: 269px;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+}
+
+.hot{
+    width: 90%;
+    height: 400px;;
+}
+.hotTop{
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgb(193, 13, 12);
+}
+.hotTopRight{
+    display: flex;
+    align-items: center;
+}
+.hotTitle{
+    font-size:24px;
+    margin-right: 10px;
+    
+    /* font-weight: 300; */
+    /* color:red; */
+}
+.hotr{
+    padding: 0 15px 0 15px;
+    font-size: 14px;
+    color:rgb(104, 123, 136);
+    border-left:1px solid rgb(104, 123, 136);
+}
+.cnMusic{
+    border: none;
+}
+.hotTopLeft{
+    display: flex;
+}
+.hotLabel{
+    color:rgb(193, 13, 12);
+    font-weight: 600;
+}
+
+.hotContain{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    /* background-color: aquamarine; */
+}
+
+
+.rightContent{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 269px;
+    border-left: 1px solid black;
+    /* background-color: aqua; */
+}
+
+.isloginBox{
+    width: 269px;
+    height: 269px;
+    /* aspect-ratio: 1/1; */
+    background-color: paleturquoise;
+    position: relative;
+}
+.btnLogin{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(208, 16, 22);
+    border:none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    translate:-50% 0;
+    border-radius: 5px;
+    color:#fff;
+}
+.singer{
+    width: 100%;
+    
+}
+.singerTitle{
+    width: 100%;
+    height: 30px;
+    color: grey;
+    border-bottom: 2px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+.singerBox{
+    margin: 10px auto;
+    width: 90%;
+    aspect-ratio: 2/1;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.singerImg{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    /* aspect-ratio: 1; */
+    background-color: aqua;
+}
