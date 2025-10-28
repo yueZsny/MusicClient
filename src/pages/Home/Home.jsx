@@ -85,7 +85,7 @@ export default function Home() {
             <div className="hotContain">
               {/* 组件化 */}
               <Hot1/>
-              
+
 
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function Home() {
             </div>
             <div className="singerBox">
               <div className="singerImg">1</div>
-              <span className="singerInfo">xxxxxxxxx</span>
+              <span className="singerInfo">修改了一点点</span>
             </div>
           </div>
         </div>
